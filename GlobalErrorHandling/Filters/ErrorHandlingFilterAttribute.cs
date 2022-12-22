@@ -4,12 +4,13 @@ using System.Net;
 
 namespace GlobalErrorHandling.Filters;
 
+//catches unhandled exceptions, cant catch HttpResponseException
 public class ErrorHandlingFilterAttribute : ExceptionFilterAttribute
 {
     public override void OnException(ExceptionContext context)
     {
         var exception = context.Exception;
-
+        
         var problemDetails = new ProblemDetails
         {
             Title= "An error eccured while processing your request.",
