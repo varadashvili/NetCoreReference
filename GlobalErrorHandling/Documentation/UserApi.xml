@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>GlobalErrorHandling</name>
+    </assembly>
+    <members>
+        <member name="T:GlobalErrorHandling.Models.User">
+            <summary>
+            User object
+            </summary>
+        </member>
+        <member name="P:GlobalErrorHandling.Models.User.Id">
+            <summary>
+            user identifier
+            </summary>
+        </member>
+        <member name="P:GlobalErrorHandling.Models.User.FirstName">
+            <summary>
+            user first name
+            </summary>
+        </member>
+        <member name="P:GlobalErrorHandling.Models.User.LastName">
+            <summary>
+            user last name
+            </summary>
+        </member>
+    </members>
+</doc>
