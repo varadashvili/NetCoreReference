@@ -34,14 +34,16 @@ public class ErrorHandlingMiddleware
 
         var problemDetails = new ProblemDetails
         {
-            Title = "An error eccured while processing your request.",
-            Status = (int)HttpStatusCode.InternalServerError,
-            Type = "https://tools.ietf.org/html/rfc7231#section-6.6.1"
+            Title = errorMessage,
+            Status = (int)errorCode,
+            Type = "https://tools.ietf.org/html/rfc7231#section-6.6.1",
+            Instance = httpContext.Request.Path
         };
+        problemDetails.Extensions.Add("customProperty", "customValue");
 
         var contentString = JsonSerializer.Serialize(problemDetails);
 
-        httpContext.Response.ContentType = "application/json";
+        httpContext.Response.ContentType = "application/problem+json;";
         httpContext.Response.StatusCode = (int)errorCode;
 
         return httpContext.Response.WriteAsync(contentString);

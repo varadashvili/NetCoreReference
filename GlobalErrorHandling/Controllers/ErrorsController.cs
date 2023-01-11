@@ -1,5 +1,4 @@
 ﻿using Microsoft.AspNetCore.Diagnostics;
-using Microsoft.AspNetCore.Http.Features;
 using Microsoft.AspNetCore.Mvc;
 
 namespace GlobalErrorHandling.Controllers;
@@ -16,7 +15,7 @@ public class ErrorsController : ControllerBase
 
         var problemResult = Problem(title: exception.Message, statusCode: 400, instance: path);
         var problemDetails = problemResult.Value as ProblemDetails;
-        //problemDetails.Extensions.Add("customProperty2", "customValue2");
+        problemDetails.Extensions.Add("customProperty", "customValue");
 
         return problemResult;
 

@@ -1,6 +1,7 @@
-﻿using Microsoft.AspNetCore.Mvc.Filters;
+﻿using System.Net;
+
 using Microsoft.AspNetCore.Mvc;
-using System.Net;
+using Microsoft.AspNetCore.Mvc.Filters;
 
 namespace GlobalErrorHandling.Filters;
 
@@ -10,13 +11,15 @@ public class ErrorHandlingFilterAttribute : ExceptionFilterAttribute
     public override void OnException(ExceptionContext context)
     {
         var exception = context.Exception;
-        
+
         var problemDetails = new ProblemDetails
         {
-            Title= "An error eccured while processing your request.",
-            Status= (int)HttpStatusCode.InternalServerError,
-            Type = "https://tools.ietf.org/html/rfc7231#section-6.6.1"
+            Title = exception.Message,
+            Status = (int)HttpStatusCode.InternalServerError,
+            Type = "https://tools.ietf.org/html/rfc7231#section-6.6.1",
+            Instance = context.HttpContext.Request.Path
         };
+        problemDetails.Extensions.Add("customProperty", "customValue");
 
         context.Result = new ObjectResult(problemDetails);
 
