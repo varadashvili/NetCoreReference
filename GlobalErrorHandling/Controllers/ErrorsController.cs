@@ -1,4 +1,8 @@
-﻿using Microsoft.AspNetCore.Diagnostics;
+﻿using System.Net;
+
+using GlobalErrorHandling.Common.Errors;
+
+using Microsoft.AspNetCore.Diagnostics;
 using Microsoft.AspNetCore.Mvc;
 
 namespace GlobalErrorHandling.Controllers;
@@ -13,9 +17,16 @@ public class ErrorsController : ControllerBase
         var exception = exceptionHandlerFeature?.Error;
         var path = exceptionHandlerFeature?.Path;
 
-        var problemResult = Problem(title: exception.Message, statusCode: 400, instance: path);
-        var problemDetails = problemResult.Value as ProblemDetails;
-        problemDetails.Extensions.Add("customProperty", "customValue");
+        var (statusCode, message) = exception switch
+        {
+            IServiceException serviceException => ((int)serviceException.StatusCode, serviceException.ErrorMessage),
+            _ => ((int)HttpStatusCode.InternalServerError, "An unexpected error occured.")
+        };
+
+        var problemResult = Problem(title: message, statusCode: statusCode, instance: path);
+
+        //var problemDetails = problemResult.Value as ProblemDetails;
+        //problemDetails.Extensions.Add("customProperty", "customValue");
 
         return problemResult;
 

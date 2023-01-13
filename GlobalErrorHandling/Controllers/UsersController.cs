@@ -26,20 +26,26 @@ public class UsersController : ControllerBase
     [HttpGet("{id}")]
     public User Get(int id)
     {
-        return _userService.GetUserById(id);
+        var getUserResult = _userService.GetUserById(id);
+
+        return getUserResult;
     }
 
     // POST api/<UsersController>
     [HttpPost]
-    public void Post([FromBody] User user)
+    public bool Post([FromBody] User user)
     {
-        _userService.InsertUser(user);
+        var insertUserResult = _userService.InsertUser(user);
+
+        return insertUserResult;
     }
 
     // DELETE api/<UsersController>/5
     [HttpDelete("{id}")]
-    public void Delete(int id)
+    public bool Delete(int id)
     {
-        _userService.DeleteUser(id);
+        var deleteUserResult = _userService.DeleteUser(id);
+
+        return deleteUserResult;
     }
 }

@@ -1,8 +1,10 @@
-﻿namespace GlobalErrorHandling.Services;
+﻿using GlobalErrorHandling.Common.Errors;
+
+namespace GlobalErrorHandling.Services;
 
 public class UserService : IUserService
 {
-    public void DeleteUser(int id)
+    public bool DeleteUser(int id)
     {
         var users = StaticDataStore.GetUsers();
 
@@ -15,8 +17,10 @@ public class UserService : IUserService
         }
         else
         {
-            throw new Exception("User not found");
+            throw new UserNotFoundException();
         }
+
+        return true;
     }
 
     public User GetUserById(int id)
@@ -26,6 +30,11 @@ public class UserService : IUserService
         var user = users
             .SingleOrDefault(x => x.Id == id);
 
+        if (user == null)
+        {
+            throw new UserNotFoundException();
+        }
+
         return user;
     }
 
@@ -34,20 +43,22 @@ public class UserService : IUserService
         return StaticDataStore.GetUsers();
     }
 
-    public void InsertUser(User user)
+    public bool InsertUser(User user)
     {
         if (user == null)
         {
-            throw new Exception("User is null");
+            throw new InvalidInputException();
         }
 
         var users = StaticDataStore.GetUsers();
 
         if (users.Any(x => x.Id == user.Id))
         {
-            throw new Exception("User already exists");
+            throw new UserAlreadyExistsException();
         }
 
         users.Add(user);
+
+        return true;
     }
 }

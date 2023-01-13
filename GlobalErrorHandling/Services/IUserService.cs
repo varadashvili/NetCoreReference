@@ -1,4 +1,5 @@
-﻿namespace GlobalErrorHandling.Services;
+﻿
+namespace GlobalErrorHandling.Services;
 
 public interface IUserService
 {
@@ -6,7 +7,7 @@ public interface IUserService
 
     public User GetUserById(int id);
 
-    public void InsertUser(User user);
+    public bool InsertUser(User user);
 
-    public void DeleteUser(int id);
+    public bool DeleteUser(int id);
 }
