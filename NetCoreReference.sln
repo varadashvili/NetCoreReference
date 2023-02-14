@@ -10,8 +10,6 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 		.editorconfig = .editorconfig
 	EndProjectSection
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FluentValidation", "FluentValidation\FluentValidation.csproj", "{1A49A56D-BB49-4945-864B-F43A600D6570}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CustomFluentValidation", "CustomFluentValidation\CustomFluentValidation.csproj", "{FED1C647-8A79-4CA5-86F6-69BFA33F9BE5}"
 EndProject
 Global
@@ -24,10 +22,6 @@ Global
 		{643FA543-48F8-49B2-BCE1-C9A250A1573F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{643FA543-48F8-49B2-BCE1-C9A250A1573F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{643FA543-48F8-49B2-BCE1-C9A250A1573F}.Release|Any CPU.Build.0 = Release|Any CPU
-		{1A49A56D-BB49-4945-864B-F43A600D6570}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{1A49A56D-BB49-4945-864B-F43A600D6570}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{1A49A56D-BB49-4945-864B-F43A600D6570}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{1A49A56D-BB49-4945-864B-F43A600D6570}.Release|Any CPU.Build.0 = Release|Any CPU
 		{FED1C647-8A79-4CA5-86F6-69BFA33F9BE5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{FED1C647-8A79-4CA5-86F6-69BFA33F9BE5}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FED1C647-8A79-4CA5-86F6-69BFA33F9BE5}.Release|Any CPU.ActiveCfg = Release|Any CPU
