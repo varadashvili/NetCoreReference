@@ -1,0 +1,14 @@
+﻿@host=https://localhost:7176
+
+POST {{host}}/api/tasks
+Content-Type: application/json
+
+{
+	  "description": null,
+      "dueDate": "14-02-2023",
+      "remindMe ": null,
+      "reminderMinutesBeforeDue": null,
+      "subItems": null
+}
+
+### end of request
