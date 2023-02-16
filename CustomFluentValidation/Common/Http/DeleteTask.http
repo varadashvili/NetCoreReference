@@ -1,6 +1,6 @@
 ﻿@host=https://localhost:7286
 
-POST {{host}}/api/tasks
+DELETE {{host}}/api/tasksmv
 Content-Type: application/json
 
 {

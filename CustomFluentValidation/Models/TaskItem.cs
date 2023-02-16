@@ -2,7 +2,9 @@
 
 public class TaskItem
 {
-    public string Description { get; set; }
+    public TaskItemDetails taskItemDetails { get; set; }
+
+    public DateTime StartDate { get; set; }
 
     public DateTime DueDate { get; set; }
 
@@ -10,5 +12,5 @@ public class TaskItem
 
     public int? ReminderMinutesBeforeDue { get; set; }
 
-    public List<string> SubItems { get; set; }
+    public List<string>? SubItems { get; set; }
 }

@@ -9,8 +9,8 @@ namespace CustomFluentValidation.Controllers;
 public class TasksController : ControllerBase
 {
     [HttpPost]
-    public TaskItem Post(TaskItem item)
+    public IActionResult Post(TaskItem item)
     {
-        return item;
+        return Ok(item);
     }
 }
