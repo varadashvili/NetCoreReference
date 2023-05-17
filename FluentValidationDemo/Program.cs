@@ -10,6 +10,7 @@ var builder = WebApplication.CreateBuilder(args);
 
     builder.Services.AddControllers();
 
+    //auto validation
     builder.Services.AddFluentValidationAutoValidation(fv =>
     {
         fv.DisableDataAnnotationsValidation = true;
