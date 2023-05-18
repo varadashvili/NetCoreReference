@@ -3,7 +3,7 @@
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Filters;
 
-namespace GlobalErrorHandling.Filters;
+namespace GlobalErrorHandlingDemo.Filters;
 
 //catches unhandled exceptions, cant catch HttpResponseException
 public class ErrorHandlingFilterAttribute : ExceptionFilterAttribute

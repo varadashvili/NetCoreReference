@@ -1,5 +1,5 @@
 ﻿
-namespace GlobalErrorHandling.Services;
+namespace GlobalErrorHandlingDemo.Services;
 
 public interface IUserService
 {

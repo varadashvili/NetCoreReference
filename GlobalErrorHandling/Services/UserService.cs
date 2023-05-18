@@ -1,6 +1,6 @@
-﻿using GlobalErrorHandling.Common.Errors;
+﻿using GlobalErrorHandlingDemo.Common.Errors;
 
-namespace GlobalErrorHandling.Services;
+namespace GlobalErrorHandlingDemo.Services;
 
 public class UserService : IUserService
 {

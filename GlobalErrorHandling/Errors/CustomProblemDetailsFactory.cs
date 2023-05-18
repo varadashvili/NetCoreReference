@@ -5,7 +5,7 @@ using Microsoft.AspNetCore.Mvc.Infrastructure;
 using Microsoft.AspNetCore.Mvc.ModelBinding;
 using Microsoft.Extensions.Options;
 
-namespace GlobalErrorHandling.Errors;
+namespace GlobalErrorHandlingDemo.Errors;
 
 public class CustomProblemDetailsFactory : ProblemDetailsFactory
 {
@@ -19,10 +19,10 @@ public class CustomProblemDetailsFactory : ProblemDetailsFactory
     public override ProblemDetails CreateProblemDetails(
         HttpContext httpContext,
         int? statusCode = null,
-        string? title = null,
-        string? type = null,
-        string? detail = null,
-        string? instance = null)
+        string title = null,
+        string type = null,
+        string detail = null,
+        string instance = null)
     {
         statusCode ??= 500;
 
@@ -44,10 +44,10 @@ public class CustomProblemDetailsFactory : ProblemDetailsFactory
         HttpContext httpContext,
         ModelStateDictionary modelStateDictionary,
         int? statusCode = null,
-        string? title = null,
-        string? type = null,
-        string? detail = null,
-        string? instance = null)
+        string title = null,
+        string type = null,
+        string detail = null,
+        string instance = null)
     {
         if (modelStateDictionary == null)
         {

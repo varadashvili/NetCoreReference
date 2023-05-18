@@ -1,0 +1,3 @@
+@host=https://localhost:7141
+
+GET {{host}}/api/users

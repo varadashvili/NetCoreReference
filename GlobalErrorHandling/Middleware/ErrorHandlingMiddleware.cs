@@ -3,7 +3,7 @@ using System.Text.Json;
 
 using Microsoft.AspNetCore.Mvc;
 
-namespace GlobalErrorHandling.Middleware;
+namespace GlobalErrorHandlingDemo.Middleware;
 
 //catches any exception and wraps response
 public class ErrorHandlingMiddleware

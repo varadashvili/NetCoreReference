@@ -9,7 +9,7 @@
     }
   },
   "profiles": {
-    "GlobalErrorHandling": {
+    "https": {
       "commandName": "Project",
       "dotnetRunMessages": true,
       "launchBrowser": true,

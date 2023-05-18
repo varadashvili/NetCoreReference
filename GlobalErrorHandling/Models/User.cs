@@ -1,4 +1,4 @@
-﻿namespace GlobalErrorHandling.Models;
+﻿namespace GlobalErrorHandlingDemo.Models;
 
 /// <summary>
 /// User object

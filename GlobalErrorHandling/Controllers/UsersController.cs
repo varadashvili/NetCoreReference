@@ -1,6 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 
-namespace GlobalErrorHandling.Controllers;
+namespace GlobalErrorHandlingDemo.Controllers;
 
 [Route("api/[controller]")]
 [ApiController]

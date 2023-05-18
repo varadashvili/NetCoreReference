@@ -1,11 +1,11 @@
 ﻿using System.Net;
 
-using GlobalErrorHandling.Common.Errors;
+using GlobalErrorHandlingDemo.Common.Errors;
 
 using Microsoft.AspNetCore.Diagnostics;
 using Microsoft.AspNetCore.Mvc;
 
-namespace GlobalErrorHandling.Controllers;
+namespace GlobalErrorHandlingDemo.Controllers;
 
 [ApiExplorerSettings(IgnoreApi = true)]
 public class ErrorsController : ControllerBase

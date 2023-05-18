@@ -1,6 +1,6 @@
 using System.Net;
 
-namespace GlobalErrorHandling.Common.Errors;
+namespace GlobalErrorHandlingDemo.Common.Errors;
 
 public interface IServiceException
 {

@@ -1,4 +1,4 @@
-﻿namespace GlobalErrorHandling.Data;
+﻿namespace GlobalErrorHandlingDemo.Data;
 
 internal static class StaticDataStore
 {

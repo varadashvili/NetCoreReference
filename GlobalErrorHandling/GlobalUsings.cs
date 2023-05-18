@@ -1,5 +1,5 @@
-﻿global using GlobalErrorHandling.Models;
-global using GlobalErrorHandling.Services;
-global using GlobalErrorHandling.Data;
-global using GlobalErrorHandling.Middleware;
-global using GlobalErrorHandling.Errors;
+﻿global using GlobalErrorHandlingDemo.Models;
+global using GlobalErrorHandlingDemo.Services;
+global using GlobalErrorHandlingDemo.Data;
+global using GlobalErrorHandlingDemo.Middleware;
+global using GlobalErrorHandlingDemo.Errors;
