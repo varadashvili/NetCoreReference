@@ -1,0 +1,35 @@
+@host=https://localhost:7054
+
+POST {{host}}/api/tasks
+Content-Type: application/json
+
+{
+    "Name": "item1",
+    "description": "Do work",
+    "startDate": "2023-02-15T05:00:00",
+    "dueDate": "2023-06-15",
+    "remindMe": true,
+    "reminderMinutesBeforeDue": 15,
+    "subItems": [
+      "item2"
+    ]
+}
+
+### end of request
+
+POST {{host}}/api/tasks
+Content-Type: application/json
+
+{
+    "Name": "item2",
+    "description": "Do work",
+    "startDate": "2023-02-15T05:00:00",
+    "dueDate": "2023-06-15",
+    "remindMe": true,
+    "reminderMinutesBeforeDue": 15,
+    "subItems": [
+      "item2"
+    ]
+}
+
+### end of request
