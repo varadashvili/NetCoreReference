@@ -1,0 +1,35 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net7.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <GenerateDocumentationFile>True</GenerateDocumentationFile>
+    <DocumentationFile>Doc\ApiDoc.xml</DocumentationFile>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.OpenApi" Version="7.0.5" />
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="6.4.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Common\Bogus\" />
+    <Folder Include="Common\Mapster\" />
+    <Folder Include="Common\Hangfire\" />
+    <Folder Include="Common\BenchMark\" />
+    <Folder Include="Common\Humanizer\" />
+    <Folder Include="Common\Refit\" />
+    <Folder Include="Common\NodaTime\" />
+    <Folder Include="Common\Serilog\" />
+    <Folder Include="Common\Polly\" />
+    <Folder Include="Doc\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="Doc\ApiDoc.xml">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+
+</Project>
