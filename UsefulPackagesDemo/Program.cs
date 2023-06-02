@@ -1,4 +1,5 @@
 using UsefulPackagesDemo.Common.Swagger;
+using UsefulPackagesDemo.Common.Versioning;
 
 var builder = WebApplication.CreateBuilder(args);
 {
@@ -7,6 +8,8 @@ var builder = WebApplication.CreateBuilder(args);
     builder.Services.AddControllers();
 
     builder.Services.AddSwagger();
+
+    builder.Services.AddVersioning();
 }
 
 var app = builder.Build();

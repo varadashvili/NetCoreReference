@@ -1,9 +1,9 @@
-﻿namespace UsefulPackagesDemo.Common.Swagger.Dtos;
+﻿namespace UsefulPackagesDemo.Common.Swagger.Contracts;
 
 /// <summary>
-/// system info dto
+/// system info
 /// </summary>
-public class SystemInfoDto
+public class SystemInfo
 {
     /// <summary>
     /// system date
