@@ -9,6 +9,8 @@
 	</PropertyGroup>
 
 	<ItemGroup>
+		<PackageReference Include="Mapster" Version="7.3.0" />
+		<PackageReference Include="Mapster.DependencyInjection" Version="1.0.0" />
 		<PackageReference Include="Microsoft.AspNetCore.Mvc.Versioning.ApiExplorer" Version="5.1.0" />
 		<PackageReference Include="Microsoft.AspNetCore.OpenApi" Version="7.0.5" />
 		<PackageReference Include="Swashbuckle.AspNetCore" Version="6.5.0" />
@@ -19,8 +21,6 @@
 		<Folder Include="Common\Hangfire\" />
 		<Folder Include="Common\BenchMark\" />
 		<Folder Include="Common\Humanizer\" />
-		<Folder Include="Common\ObjectMapping\Mapster\" />
-		<Folder Include="Common\ObjectMapping\Maperly\" />
 		<Folder Include="Common\Refit\" />
 		<Folder Include="Common\NodaTime\" />
 		<Folder Include="Common\Serilog\" />

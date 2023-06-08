@@ -12,9 +12,9 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FluentValidationDemo", "FluentValidationDemo\FluentValidationDemo.csproj", "{0A5C846A-38B7-47F6-9929-E5C70E1DB1A7}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FlowControlDemo", "FlowControlDemo\FlowControlDemo.csproj", "{58C5876D-842F-4A79-9C2F-ACDD4B07A3ED}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FlowControlDemo", "FlowControlDemo\FlowControlDemo.csproj", "{58C5876D-842F-4A79-9C2F-ACDD4B07A3ED}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UsefulPackagesDemo", "UsefulPackagesDemo\UsefulPackagesDemo.csproj", "{66954355-CAB1-4DEA-B979-0A817C63671F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "UsefulPackagesDemo", "UsefulPackagesDemo\UsefulPackagesDemo.csproj", "{66954355-CAB1-4DEA-B979-0A817C63671F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

@@ -1,3 +1,4 @@
+using UsefulPackagesDemo.Common.ObjectMapping.Mapster;
 using UsefulPackagesDemo.Common.SwaggerDoc;
 using UsefulPackagesDemo.Common.Versioning;
 
@@ -10,6 +11,8 @@ var builder = WebApplication.CreateBuilder(args);
     builder.Services.AddSwagger();
 
     builder.Services.AddVersioning();
+
+    builder.Services.AddMapsterMappings();
 }
 
 var app = builder.Build();
