@@ -1,6 +1,6 @@
 ﻿using System.ComponentModel.DataAnnotations;
 
-namespace UsefulPackagesDemo.Common.Swagger.Contracts;
+namespace UsefulPackagesDemo.Common.SwaggerDoc.Contracts;
 
 /// <summary>
 /// task item info

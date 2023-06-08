@@ -1,4 +1,4 @@
-﻿namespace UsefulPackagesDemo.Common.Swagger.Contracts;
+﻿namespace UsefulPackagesDemo.Common.SwaggerDoc.Contracts;
 
 /// <summary>
 /// system info

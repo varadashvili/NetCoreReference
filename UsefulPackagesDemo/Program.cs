@@ -1,4 +1,4 @@
-using UsefulPackagesDemo.Common.Swagger;
+using UsefulPackagesDemo.Common.SwaggerDoc;
 using UsefulPackagesDemo.Common.Versioning;
 
 var builder = WebApplication.CreateBuilder(args);

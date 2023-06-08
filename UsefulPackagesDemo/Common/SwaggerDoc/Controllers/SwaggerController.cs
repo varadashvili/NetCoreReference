@@ -1,8 +1,8 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 
-using UsefulPackagesDemo.Common.Swagger.Contracts;
+using UsefulPackagesDemo.Common.SwaggerDoc.Contracts;
 
-namespace UsefulPackagesDemo.Common.Swagger.Controllers;
+namespace UsefulPackagesDemo.Common.SwaggerDoc.Controllers;
 
 [Route("api/[controller]")]
 [ApiVersion("2.0")]

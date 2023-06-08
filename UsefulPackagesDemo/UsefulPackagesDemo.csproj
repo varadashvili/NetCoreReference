@@ -16,10 +16,11 @@
 
 	<ItemGroup>
 		<Folder Include="Common\Bogus\" />
-		<Folder Include="Common\Mapster\" />
 		<Folder Include="Common\Hangfire\" />
 		<Folder Include="Common\BenchMark\" />
 		<Folder Include="Common\Humanizer\" />
+		<Folder Include="Common\ObjectMapping\Mapster\" />
+		<Folder Include="Common\ObjectMapping\Maperly\" />
 		<Folder Include="Common\Refit\" />
 		<Folder Include="Common\NodaTime\" />
 		<Folder Include="Common\Serilog\" />

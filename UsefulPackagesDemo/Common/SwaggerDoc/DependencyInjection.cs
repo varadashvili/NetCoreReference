@@ -2,7 +2,7 @@
 
 using Microsoft.OpenApi.Models;
 
-namespace UsefulPackagesDemo.Common.Swagger;
+namespace UsefulPackagesDemo.Common.SwaggerDoc;
 
 public static class DependencyInjection
 {
